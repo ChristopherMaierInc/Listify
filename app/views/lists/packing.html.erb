@@ -1,0 +1,17 @@
+<strong><underline><h1>Clothing List</h1></strong></underline>
+
+<style>
+  body {
+    background: url(http://www.factzoo.com/sites/all/themes/marinelli/img/banners/animal-facts-wildlife-pictures.jpg);
+    color: #A5E72A;
+    font-family: "roboto", sans-serif;
+    text-align: right;
+    font-stretch: extra-condensed;
+    font-size: 10em;
+  }
+
+</style>
+
+<% @clothes.each do |item, qty| %>
+<%= "#{qty}x #{item}" %><br>
+<% end %>
